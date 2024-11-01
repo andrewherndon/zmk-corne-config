@@ -1,0 +1,18 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+  self:
+    path: config
+
+# config/corne.conf
+CONFIG_ZMK_DISPLAY=y
+CONFIG_ZMK_WIDGET_BATTERY_STATUS=y
+CONFIG_ZMK_WIDGET_OUTPUT_STATUS=y
+CONFIG_ZMK_WIDGET_LAYER_STATUS=y
+CONFIG_ZMK_WIDGET_WPM_STATUS=y
